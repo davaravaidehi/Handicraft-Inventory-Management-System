@@ -1,0 +1,16 @@
+ if (Convert.ToInt32(r11.Text) > Convert.ToInt32(r9.Text))
+            {
+                MessageBox.Show("Return Qty Is Maximum Than Purchase Qty ");
+            }
+            else
+            {
+                int a = Convert.ToInt32(r8.Text);
+                int b = Convert.ToInt32(r11.Text);
+                int amt = a * b;
+                r12.Text = Convert.ToString(amt);
+
+                int c = Convert.ToInt32(r10.Text);
+                int d = Convert.ToInt32(r12.Text);
+                int netamt = c - d;
+                r13.Text = Convert.ToString(netamt);
+            }

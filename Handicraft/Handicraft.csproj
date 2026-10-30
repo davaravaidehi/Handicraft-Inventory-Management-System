@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43F40A43-CAE4-4C47-B5FE-74DF0C104C33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Handicraft</RootNamespace>
+    <AssemblyName>Handicraft</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_us.Designer.cs">
+      <DependentUpon>About_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_password.Designer.cs">
+      <DependentUpon>change_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_master.Designer.cs">
+      <DependentUpon>Customer_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_report.Designer.cs">
+      <DependentUpon>Customer_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hetvi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hetvi.Designer.cs">
+      <DependentUpon>Hetvi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item_master.Designer.cs">
+      <DependentUpon>Item_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item_report.Designer.cs">
+      <DependentUpon>Item_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_master.Designer.cs">
+      <DependentUpon>Purchase_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_report.Designer.cs">
+      <DependentUpon>Purchase_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_return_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_return_master.Designer.cs">
+      <DependentUpon>Purchase_return_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_return_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_return_report.Designer.cs">
+      <DependentUpon>Purchase_return_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_master.Designer.cs">
+      <DependentUpon>Sales_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_report.Designer.cs">
+      <DependentUpon>Sales_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_return_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_return_master.Designer.cs">
+      <DependentUpon>Sales_return_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_return_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_return_report.Designer.cs">
+      <DependentUpon>Sales_return_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock_master.Designer.cs">
+      <DependentUpon>Stock_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock_report.Designer.cs">
+      <DependentUpon>Stock_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vaidehi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vaidehi.Designer.cs">
+      <DependentUpon>Vaidehi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vansari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vansari.Designer.cs">
+      <DependentUpon>Vansari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker_master.Designer.cs">
+      <DependentUpon>Worker_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker_report.Designer.cs">
+      <DependentUpon>Worker_report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About_us.resx">
+      <DependentUpon>About_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_password.resx">
+      <DependentUpon>change_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_master.resx">
+      <DependentUpon>Customer_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_report.resx">
+      <DependentUpon>Customer_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hetvi.resx">
+      <DependentUpon>Hetvi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_master.resx">
+      <DependentUpon>Item_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_report.resx">
+      <DependentUpon>Item_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchase_master.resx">
+      <DependentUpon>Purchase_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase_report.resx">
+      <DependentUpon>Purchase_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase_return_master.resx">
+      <DependentUpon>Purchase_return_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase_return_report.resx">
+      <DependentUpon>Purchase_return_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_master.resx">
+      <DependentUpon>Sales_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_report.resx">
+      <DependentUpon>Sales_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_return_master.resx">
+      <DependentUpon>Sales_return_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_return_report.resx">
+      <DependentUpon>Sales_return_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock_master.resx">
+      <DependentUpon>Stock_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock_report.resx">
+      <DependentUpon>Stock_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vaidehi.resx">
+      <DependentUpon>Vaidehi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vansari.resx">
+      <DependentUpon>Vansari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Worker_master.resx">
+      <DependentUpon>Worker_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Worker_report.resx">
+      <DependentUpon>Worker_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flower_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MDI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MDI_new.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notpad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wordpad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master-cmp_rpt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock_detail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utility.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_pass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_as.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_as2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_us.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_us2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progressbar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MDI__.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker_master.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase_return.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales_return.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker_report.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase_master.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_btn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item_report.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock_report.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales_report.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales_report1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales_report11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pur_ret_report.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCrystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Crystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_password.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales_entry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8f93443fce5d352a6dbe485c1108380e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\697ff4c07fc4821149763d415c769dca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61dae8872388956b42384ee552fa7104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8f93443fce5d352a6dbe485c1108380e1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2cc8f5ddc75832139e0d2985581ec03d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3c2b664ae66f86bbbbfbfc7e9c2f72cc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\357c0bf0685ca6a70eeccf79345649e1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\697ff4c07fc4821149763d415c769dca1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\995abf120b58df53b78b109a85eb3d05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aadbe5eebad5d7a6637144bbd6e837c4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca909661dcfa5fecbf149d536eb86532.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2a8742177d424ac178447232810d5dec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01f041a7956bcd03dc4cf3b79cedccdf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2db19c02acad17f94424a2c9db3dc1c5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\995abf120b58df53b78b109a85eb3d051.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61dae8872388956b42384ee552fa71041.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flower_bg1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
