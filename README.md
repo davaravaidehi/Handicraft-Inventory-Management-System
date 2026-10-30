@@ -117,12 +117,4 @@ Handicraft/
 4. Check available stock under **Stock**.
 5. Open the **Report** menu to view records.
 
-## Future Improvements
-
-- Use a relative database path so the app runs on any computer
-- Use parameterized queries and hashed passwords for better security
-- Export reports to PDF and Excel
-- Low-stock alerts
-- Move to SQL Server for multi-user use
-
 **Vaidehi Davara** · [GitHub](https://github.com/davaravaidehi)
