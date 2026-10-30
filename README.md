@@ -11,8 +11,6 @@ A Windows desktop application built with **C# Windows Forms** and a **Microsoft 
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Future Improvements](#future-improvements)
-- [Author](#author)
 
 ## Features
 
